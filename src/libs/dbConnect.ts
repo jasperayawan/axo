@@ -4,7 +4,7 @@ declare global {
     var mongoose: any;
 }
 
-const MONGO_URI = "mongodb+srv://ejayawan22:OaQm5wklKu63qMPb@cluster0.mshx2cb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGO_URI = process.env.MONGO_URI!;
 
 if(!MONGO_URI){
     throw new Error("Please define the MONGODB_URI environment variable inside .env.local")

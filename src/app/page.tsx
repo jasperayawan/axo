@@ -37,6 +37,7 @@ export default function Home() {
         method: 'POST',
         body: JSON.stringify(formData)
       });
+      toast.success("User successfully created!")
     }
     catch(error){
       console.error('Error while signing up at handleSignUp SignUp.tsx: ', error);
