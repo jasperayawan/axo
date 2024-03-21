@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/bcrypt": "^5.0.2",
     "ably": "^1.2.49",
     "bcrypt": "^5.1.1",
     "date-fns": "^3.6.0",
