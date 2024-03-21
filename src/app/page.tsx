@@ -37,6 +37,7 @@ export default function Home() {
         method: 'POST',
         body: JSON.stringify(formData)
       });
+      signIn('credentials', { email, password }); //use this if you want to navigate directly to your desire page.
       toast.success("User successfully created!")
     }
     catch(error){
