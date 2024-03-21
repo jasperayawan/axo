@@ -2,7 +2,7 @@
 
 import Nav from "@/components/Nav";
 import { FormEvent, useReducer } from "react";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import toast from 'react-hot-toast';
 
 const initialState = {
@@ -13,6 +13,9 @@ const initialState = {
 };
 
 export default function Home() {
+  // const isAthenticated = useSession();
+  // console.log(isAthenticated)
+
   const reducer = (state: any, action: any) => ({
     ...state,
     ...action,
